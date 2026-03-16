@@ -213,7 +213,7 @@ const LoginForm = ({ onForgotPassword }: LoginFormProps) => {
             <button
               type="button"
               onClick={onForgotPassword}
-              className="text-xs font-medium text-red-600 hover:text-red-700"
+              className="text-xs font-medium text-[#FF8682] hover:text-[#FF8682]/80"
             >
               Forgot Password?
             </button>
