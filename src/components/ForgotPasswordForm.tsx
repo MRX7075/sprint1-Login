@@ -129,7 +129,7 @@ const ForgotPasswordForm = ({ onBackToLogin }: ForgotPasswordFormProps) => {
                         />
                       </FormControl>
                     </div>
-                    <FormMessage />
+                    <FormMessage className="text-[#6F6F6F] text-sm mt-1" />
                   </FormItem>
                 )}
               />
@@ -210,7 +210,7 @@ const ForgotPasswordForm = ({ onBackToLogin }: ForgotPasswordFormProps) => {
                         {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
                       </button>
                     </div>
-                    <FormMessage />
+                    <FormMessage className="text-[#6F6F6F] text-sm mt-1" />
                   </FormItem>
                 )}
               />
@@ -221,7 +221,7 @@ const ForgotPasswordForm = ({ onBackToLogin }: ForgotPasswordFormProps) => {
                 name="confirmPassword"
                 render={({ field }) => (
                   <FormItem>
-                    <label className="text-xs font-semibold">Re-enter Password</label>
+                    <label className="text-xs font-semibold">Confirm Password</label>
                     <div className="relative">
                       <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
 
@@ -248,7 +248,7 @@ const ForgotPasswordForm = ({ onBackToLogin }: ForgotPasswordFormProps) => {
                         )}
                       </button>
                     </div>
-                    <FormMessage />
+                    <FormMessage className="text-[#6F6F6F] text-sm mt-1" />
                   </FormItem>
                 )}
               />

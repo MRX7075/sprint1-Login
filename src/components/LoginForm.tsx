@@ -74,19 +74,24 @@ const LoginForm = ({ onForgotPassword }: LoginFormProps) => {
   return (
     <>
       {/* Welcome Section */}
-      <div className="mb-6">
-        <img
-          src={logo}
-          alt="iCruiseEgypt"
-          className="h-12 w-12 rounded-xl mb-2"
-        />
-        <h1 className="text-2xl font-bold text-foreground">
-          Welcome to iCruise
-        </h1>
-        <p className="mt-0.5 text-sm text-muted-foreground">
-          Login to access your iCruiseEgypt account
-        </p>
-      </div>
+<div className="mb-6 flex flex-col items-center text-center">
+  {/* Logo */}
+  <img
+    src={logo}
+    alt="iCruiseEgypt"
+    className="h-16 w-16 rounded-xl mb-3" // slightly bigger logo
+  />
+
+  {/* Main Title */}
+  <h1 className="text-3xl font-bold text-foreground"> {/* bigger font */}
+    Welcome to iCruise
+  </h1>
+
+  {/* Subtext */}
+  <p className="mt-1 text-sm text-muted-foreground">
+    Login to access your iCruiseEgypt account
+  </p>
+</div>
 
       {/* Form */}
       <Form {...form}>
@@ -118,7 +123,7 @@ const LoginForm = ({ onForgotPassword }: LoginFormProps) => {
                     </SelectContent>
                   </Select>
                 </FormControl>
-                <FormMessage />
+                <FormMessage className="text-[#6F6F6F] text-sm mt-1" />
               </FormItem>
             )}
           />
@@ -146,7 +151,7 @@ const LoginForm = ({ onForgotPassword }: LoginFormProps) => {
                   </FormControl>
                 </div>
 
-                <FormMessage />
+                <FormMessage className="text-[#6F6F6F] text-sm mt-1" />
               </FormItem>
             )}
           />
@@ -182,7 +187,7 @@ const LoginForm = ({ onForgotPassword }: LoginFormProps) => {
                   </button>
                 </div>
 
-                <FormMessage />
+                <FormMessage className="text-[#6F6F6F] text-sm mt-1" />
               </FormItem>
             )}
           />
@@ -208,7 +213,7 @@ const LoginForm = ({ onForgotPassword }: LoginFormProps) => {
             <button
               type="button"
               onClick={onForgotPassword}
-              className="text-xs font-medium text-primary hover:text-primary/80"
+              className="text-xs font-medium text-red-600 hover:text-red-700"
             >
               Forgot Password?
             </button>
